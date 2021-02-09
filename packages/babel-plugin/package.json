@@ -1,0 +1,16 @@
+{
+  "name": "@perelandra-ui/babel-plugin",
+  "version": "0.0.0",
+  "description": "Babel plugin to transpile sx prop",
+  "main": "dist/perelandra-ui-babel-plugin.cjs.js",
+  "author": "Wes Cole <wesley.cole87@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/types": "^7.12.13"
+  },
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts"
+    ]
+  }
+}
