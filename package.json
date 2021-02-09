@@ -1,0 +1,32 @@
+{
+  "name": "perelandra-ui",
+  "version": "0.0.0",
+  "description": "Design system for React applications",
+  "main": "index.js",
+  "repository": "git@github.com:wesleycole/perelandra-ui.git",
+  "author": "Wes Cole <wesley.cole87@gmail.com>",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "postinstall": "preconstruct dev",
+    "build": "preconstruct build",
+    "release": "yarn build && lerna publish"
+  },
+  "devDependencies": {
+    "@preconstruct/cli": "^2.0.3"
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.12.13",
+    "lerna": "^3.22.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  }
+}
