@@ -2,7 +2,7 @@
   "name": "@perelandra-ui/sandbox",
   "version": "1.0.0",
   "description": "Sandbox application for testing the babel plugin",
-  "main": "index.js",
+  "main": "dist/perelandra-ui-sandbox.cjs.js",
   "license": "MIT",
   "private": true,
   "scripts": {

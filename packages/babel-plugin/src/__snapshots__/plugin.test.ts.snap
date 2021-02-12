@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`perelandra-ui 1. perelandra-ui: 1. perelandra-ui 1`] = `
+
+"hello";
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+'hello'
+
+
+`;
