@@ -1,9 +1,11 @@
+import path from 'path'
 import pluginTester from 'babel-plugin-tester'
 import plugin from '.'
 
 pluginTester({
-  plugin: plugin,
+  plugin,
   pluginName: 'perelandra-ui',
   snapshot: true,
-  tests: [{ code: '"hello";' }],
+  fixtures: path.join(__dirname, '__fixtures__'),
+  babelOptions: require('../babel.config.js'),
 })
