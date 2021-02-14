@@ -6,6 +6,7 @@ pluginTester({
   plugin,
   pluginName: '@perelandra-ui',
   filename: __filename,
+  babelOptions: require('./babel.config.js'),
   fixtures: path.join(__dirname, '__fixtures__'),
   // tests: [
   //   {
