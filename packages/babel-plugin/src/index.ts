@@ -14,7 +14,7 @@ const breakPoints = {
 // transforms to: { sm: "@media (min-width: 640px)", md: "@media (min-width: 768px)", ... }
 const mediaBreakPoints = Object.fromEntries(
   Object.entries(breakPoints).map(([key, value]) => [
-    key,
+    `@media:${key}`,
     `@media (min-width: ${value})`,
   ])
 )
@@ -62,7 +62,6 @@ function addVar(cssPropertyValue) {
 export default function ({ types: t }) {
   const replaceVars = {
     // translate --short-hand => var(--short-hand) in strings
-    // TODO: TemplateLiterals
     StringLiteral(path) {
       path.node.value = addVar(path.node.value)
     },
