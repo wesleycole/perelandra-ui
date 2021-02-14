@@ -102,11 +102,17 @@ export default function ({ types: t }) {
   }
 
   return {
-    name: 'perelandra-ui',
+    name: '@perelandra-ui',
     visitor: {
       JSXAttribute(path) {
         if (attributesToReplace.includes(path.node.name.name)) {
           path.traverse(replaceVars)
+        }
+
+        if (path.node.name.name === 'sx') {
+          path.replaceWith(
+            t.jsxAttribute(t.jsxIdentifier('css'), path.node.value)
+          )
         }
       },
     },

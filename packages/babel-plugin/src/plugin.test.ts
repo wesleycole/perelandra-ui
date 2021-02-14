@@ -4,10 +4,9 @@ import plugin from '.'
 
 pluginTester({
   plugin,
-  pluginName: 'perelandra-ui',
+  pluginName: '@perelandra-ui',
   filename: __filename,
-  // fixtures: path.join(__dirname, '__fixtures__'),
-  babelOptions: require('../babel.config.js'),
+  fixtures: path.join(__dirname, '__fixtures__'),
   // tests: [
   //   {
   //     code: `

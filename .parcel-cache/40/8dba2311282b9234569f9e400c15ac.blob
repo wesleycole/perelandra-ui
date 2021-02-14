@@ -1,0 +1,58 @@
+"use strict";
+
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+  var _react = _interopRequireDefault(require("react"));
+
+  var _reactDom = _interopRequireDefault(require("react-dom"));
+
+  var _react2 = require("@emotion/react");
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
+
+  var _ref = "development" === "production" ? {
+    name: "1nf3vt3",
+    styles: "background:purple"
+  } : {
+    name: "182ju9u-Box",
+    styles: "background:purple;label:Box;",
+    map: "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVTSIsImZpbGUiOiJpbmRleC50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgUmVhY3RET00gZnJvbSAncmVhY3QtZG9tJ1xuXG5mdW5jdGlvbiBCb3goKSB7XG4gIHJldHVybiAoXG4gICAgPGRpdlxuICAgICAgLy8gc3g9e3tcbiAgICAgIC8vICAgYmc6ICctLWJhY2tncm91bmQnLFxuICAgICAgLy8gICBjb2xvcjogJy0tdGV4dCcsXG4gICAgICAvLyB9fVxuICAgICAgY3NzPXt7XG4gICAgICAgIGJhY2tncm91bmQ6ICdwdXJwbGUnLFxuICAgICAgfX1cbiAgICA+XG4gICAgICBIaVxuICAgIDwvZGl2PlxuICApXG59XG5cbmZ1bmN0aW9uIEFwcCgpIHtcbiAgcmV0dXJuIDxCb3ggLz5cbn1cblxuUmVhY3RET00ucmVuZGVyKDxBcHAgLz4sIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyb290JykpXG4iXX0= */",
+    toString: _EMOTION_STRINGIFIED_CSS_ERROR__
+  };
+
+  function Box() {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      // sx={{
+      //   bg: '--background',
+      //   color: '--text',
+      // }}
+      css: _ref
+    }, "Hi");
+  }
+
+  _c = Box;
+
+  function App() {
+    return /*#__PURE__*/_react.default.createElement(Box, null);
+  }
+
+  _c2 = App;
+
+  _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById('root'));
+
+  var _c, _c2;
+
+  $RefreshReg$(_c, "Box");
+  $RefreshReg$(_c2, "App");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

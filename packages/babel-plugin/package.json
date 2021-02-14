@@ -5,13 +5,13 @@
   "main": "dist/perelandra-ui-babel-plugin.cjs.js",
   "author": "Wes Cole <wesley.cole87@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "@babel/types": "^7.12.13"
-  },
   "preconstruct": {
     "entrypoints": [
       "index.ts"
     ]
+  },
+  "dependencies": {
+    "@babel/types": "^7.12.13"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.12.16",
