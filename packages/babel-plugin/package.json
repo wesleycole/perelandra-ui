@@ -12,5 +12,9 @@
     "entrypoints": [
       "index.ts"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.16"
   }
 }
