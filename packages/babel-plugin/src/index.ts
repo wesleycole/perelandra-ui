@@ -66,6 +66,13 @@ export default function ({ types: t }) {
     StringLiteral(path) {
       path.node.value = addVar(path.node.value)
     },
+
+    TemplateElement(path) {
+      path.node.value.raw = addVar(path.node.value.raw)
+      // TODO: check the difference between raw and cooked
+      path.node.value.cooked = addVar(path.node.value.cooked)
+    },
+
     // shorthand and media query replacements
     Property(path) {
       const replacementNames = shortHandPropertyMap[path.node.key.name]
