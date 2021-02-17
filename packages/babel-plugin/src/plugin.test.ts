@@ -1,11 +1,18 @@
 import path from 'path'
 import pluginTester from 'babel-plugin-tester'
-import plugin from '.'
+import plugin from './'
 
 pluginTester({
   plugin,
   pluginName: '@perelandra-ui',
+  babelOptions: {
+    presets: [
+      '@babel/preset-env',
+      ['@babel/preset-react', { runtime: 'automatic' }],
+      '@babel/preset-typescript',
+    ],
+  },
   filename: __filename,
-  babelOptions: require('./babel.config.js'),
   fixtures: path.join(__dirname, '__fixtures__'),
+  snapshot: true,
 })

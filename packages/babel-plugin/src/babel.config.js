@@ -5,10 +5,10 @@ module.exports = function (api) {
     ['@babel/preset-react', { runtime: 'automatic' }],
     '@babel/preset-typescript',
   ]
-  const plugins = []
+  // const plugins = []
 
   return {
     presets,
-    plugins,
+    // plugins,
   }
 }
