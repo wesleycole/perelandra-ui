@@ -1,0 +1,65 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add babel-plugin-perelandra-ui -D
+
+PATH: 
+  /var/folders/r5/zwryns955tb949g7wr6gtcp40000gn/T/yarn--1613313307877-0.38196775804721295:/Users/wescole/Perelandra/perelandra-ui/sandbox/node_modules/.bin:/Users/wescole/.config/yarn/link/node_modules/.bin:/usr/local/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/usr/local/bin/node_modules/npm/bin/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/Applications/Postgres.app/Contents/Versions/9.6/bin:/Users/wescole/.rbenv/shims:/Users/wescole/.rbenv/bin:/Users/wescole/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/wescole/.rbenv/bin:/usr/local/bin:/Users/wescole/.composer/vendor/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@perelandra-ui%2fbabel-plugin: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:66987:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.4/libexec/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1327:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "@perelandra-ui/sandbox",
+    "version": "1.0.0",
+    "description": "Sandbox application for testing the babel plugin",
+    "main": "dist/perelandra-ui-sandbox.cjs.js",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+      "start": "parcel serve ./index.html",
+      "build": "parcel build ./index.html"
+    },
+    "dependencies": {
+      "@emotion/react": "^11.1.5",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.12.16",
+      "@babel/plugin-proposal-optional-chaining": "^7.12.13",
+      "@babel/preset-env": "^7.12.13",
+      "@babel/preset-react": "^7.12.13",
+      "@babel/preset-typescript": "^7.12.13",
+      "@emotion/babel-plugin": "^11.2.0",
+      "@emotion/babel-preset-css-prop": "^11.2.0",
+      "@perelandra-ui/babel-plugin": "^0.0.0",
+      "@types/react": "^17.0.1",
+      "@types/react-dom": "^17.0.0",
+      "parcel": "^2.0.0-beta.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
